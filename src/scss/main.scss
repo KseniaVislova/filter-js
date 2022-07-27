@@ -1,0 +1,101 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+
+body {
+  font-family: Muller, sans-serif;
+  color: #fff;
+  background-color: #1F3438;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  padding: 1.5em;
+  text-transform: uppercase;
+}
+
+.text-grey {
+  color: #B5B8B1;
+  text-shadow: #fff 0 0 30px;
+}
+
+.text-red {
+  color: #E32636;
+  text-shadow: #fff 0 0 30px;
+}
+
+.text-blue {
+  color: #77DDE7;
+  text-shadow: #fff 0 0 30px;
+}
+
+.text-yellow {
+  color: #D6AE01;
+  text-shadow: #fff 0 0 30px;
+}
+
+.text-green {
+  color: #009B77;
+  text-shadow: #fff 0 0 30px;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  margin: 1rem;
+  width: 12rem;
+  height: 5rem;
+  border-radius: 5px;
+}
+
+.grey {
+  background-color: #B5B8B1;
+  box-shadow: 0 0 2rem #009B77;
+}
+
+.red {
+  background-color: #E32636;
+  box-shadow: 0 0 2rem #D6AE01;
+}
+
+.blue {
+  background-color: #77DDE7;
+  box-shadow: 0 0 2rem #B5B8B1;
+}
+
+.yellow {
+  background-color: #D6AE01;
+  box-shadow: 0 0 2rem #77DDE7;
+}
+
+.green {
+  background-color: #009B77;
+  box-shadow: 0 0 2rem #E32636;
+}
+
+.hide {
+  opacity: 1;
+  animation: hiding 3s ease-in-out forwards;
+}
+
+@keyframes hiding {
+  to {
+    opacity: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+  }
+}
